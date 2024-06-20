@@ -35,8 +35,8 @@ INSERT INTO books (title, author, isbn, year) VALUES
 ('Clean Code', 'Robert C. Martin', '9780132350884', 2008),
 ('Design Patterns', 'Erich Gamma', '9780201633610', 1994);
 ```
-2. Configure `application.yml` with your database information.
-    Example Configuration: 
+2. Configure `application.yml` with your database information. Example Configuration:
+   ```
     server:
     port: 8080
     spring:
@@ -49,7 +49,10 @@ INSERT INTO books (title, author, isbn, year) VALUES
         hibernate:
         ddl-auto: update
     show-sql: true
-3. start the application:
+   ```
+3. Start the application.
+4. Use Postman to test the API.
+   - http://localhost:8080/books : Retrive a list of all books.
 
 ### API Endpoints
 - GET /books : Retrieve a list of all books.
